@@ -1,44 +1,57 @@
+/* Globalized font-text */
 body {
     font-family: serif;
 }
 
+
+
+
+
+/* index.html >>> .container */
 .container {
     width: 100%;
     height: 100px;
     
     background-color: rgba(90,200,250,1);
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
     
-    border-style: solid
+    border-style: solid;
     border-width: 1px;
-    border-color: black;
+    border-color: rgba(90,200,250,1);
     border-radius: 20px;
     
     margin-top: 20px;
     padding-top: 50px;
 }
 
-a {
+/* Globalized link stylization */
+a, p {
     text-decoration: none;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
     color: white;
+}
+
+a:active, p:active {
+    opacity: 0.70;
 }
 
 
 
 
-
+/* Support.html >>> .supportContainer */
 .supportContainer {
     width: 100%;
     height: 50px;
     
     background-color: rgba(90,200,250,1);
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
     
-    border-style: solid
+    border-style: solid;
     border-width: 1px;
-    border-color: black;
+    border-color: rgba(90,200,250,1);
     border-radius: 20px;
     
     margin-top: 20px;
@@ -46,8 +59,10 @@ a {
     z-index: 1;
 }
 
+/* Overrides the header label, deeming it smaller than the rest */
 #supportLabelOverride {
-    height: 25px;
+    height: 150px;
+    display: block;
     
     padding-top: 0px;
     margin-bottom: 20px;
@@ -55,16 +70,65 @@ a {
     border-radius: 10px;
 }
 
+#subHeaderOverride {
+    font-weight: lighter;
+}
+
 #overlay {
-  position: fixed; /* Sit on top of the page content */
-  display: none; /* Hidden by default */
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+
+
+
+/* Globalized information container */
+.typeContainer {
+    width: 100%;
+    height: 600px;
+    
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 20px;
+    align-content: center;
+    
+}
+
+.innerContainer {
+    width: 80%;
+    height: 400px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    
+    background-color: rgba(0,0,0,0.5);
+    border-style: solid;
+    border-width: 1px;
+    background-color: rgba(90,200,250,1);
+    border-radius: 20px;
+    
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+/*About.html styles*/
+.innerBodyPages {
+    background-color: rgba(90,200,250,1);
+}
+
+#header {
+    font-weight: bold;
+    font-size: 40px;
+    color: ghostwhite;
+    margin-top: 2%;
+    margin-left: 2%;
 }
